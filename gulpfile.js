@@ -13,6 +13,7 @@ var cssnano = require('cssnano');
 var del = require('del');
 
 var pkg = require('./package.json');
+var homepage = pkg.homepage.replace(/\/+$/, '');
 var production = process.env.NODE_ENV === 'production';
 
 gulp.task('sass', function() {
@@ -46,7 +47,7 @@ gulp.task('templates', function() {
     .pipe(nunjucksRender({
       path: ['src/templates/'],
       data: {
-        'BASE_URL': pkg.homepage || '',
+        'BASE_URL': production ? homepage : '',
         'CURRENT_YEAR': new Date().getFullYear()
       }
     }))
