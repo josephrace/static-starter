@@ -1,6 +1,6 @@
 # Static Starter [![Build Status](https://travis-ci.org/josephrace/static-starter.svg?branch=master)](https://travis-ci.org/josephrace/static-starter)
 
-A simple starter configuration to make building static HTML websites easier by using templates, partials, environment variables, and build steps for linting, minification etc.
+A simple starter configuration that I use to make building static HTML websites easier by utilising Nunjucks templates, live reloading and a variety of Gulp build tasks.
 
 ## Tools
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
