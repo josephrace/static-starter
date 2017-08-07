@@ -1,0 +1,3 @@
+<footer>
+  {{ SITE_NAME }} - {{ CURRENT_YEAR }} | <a href="mailto:{{ SITE_EMAIL }}">{{ SITE_EMAIL }}</a>
+</footer>

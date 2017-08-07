@@ -1,0 +1,9 @@
+<header>
+  <h1>{{ SITE_NAME }}</h1>
+  <nav>
+    <ul>
+      <li><a href="{{ BASE_URL }}/">Home</a></li>
+      <li><a href="{{ BASE_URL }}/about">About</a></li>
+    </ul>
+  </nav>
+</header>

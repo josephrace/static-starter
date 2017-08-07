@@ -1,0 +1,11 @@
+{% extends "layout.nunjucks" %}
+{% set metaTitle = "" %}
+{% set metaDescription = "Write your meta description for this page" %}
+{% block main %}
+  <main>
+    <h1>Home</h1>
+    <img src="{{ BASE_URL }}/images/mountains1.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus, est deserunt debitis quis id nam corporis nemo, itaque dolore vero ipsam pariatur atque sint possimus temporibus expedita, quod aliquid.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus, est deserunt debitis quis id nam corporis nemo, itaque dolore vero ipsam pariatur atque sint possimus temporibus expedita, quod aliquid.</p>
+  </main>
+{% endblock %}

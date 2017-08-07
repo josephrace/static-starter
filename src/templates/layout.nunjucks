@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ metaTitle + " | " if metaTitle !== "" }}{{ SITE_NAME }}</title>
+    <meta name="description" content="{{ metaDescription }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ BASE_URL }}/css/main.css">
+  </head>
+  <body>
+    {% include "partials/header.nunjucks" %}
+    {% block main %}{% endblock %}
+    {% include "partials/footer.nunjucks" %}
+    <script src="{{ BASE_URL }}/js/main.js"></script>
+    {% if ANALYTICS_ID !== "" %}
+    <script>
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','{{ ANALYTICS_ID }}','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    {% endif %}
+  </body>
+</html>
