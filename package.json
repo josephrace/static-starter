@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/josephrace/static-starter/issues"
   },
-  "homepage": "http://josephrace.co.uk/static-starter",
+  "homepage": "https://josephrace.github.io/static-starter",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "browser-sync": "^2.18.13",
